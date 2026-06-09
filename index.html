@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible FAQ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main class="container">
+
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq-item">
+    <button aria-expanded="false" aria-controls="q1" id="btn1">
+      What is this project about?
+    </button>
+    <div id="q1" class="answer" hidden>
+      This project demonstrates an accessible FAQ component using HTML, CSS, and JavaScript.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button aria-expanded="false" aria-controls="q2" id="btn2">
+      How does accessibility work here?
+    </button>
+    <div id="q2" class="answer" hidden>
+      It uses semantic HTML and ARIA attributes to support screen readers and keyboard navigation.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button aria-expanded="false" aria-controls="q3" id="btn3">
+      Why is this important?
+    </button>
+    <div id="q3" class="answer" hidden>
+      Many real-world websites use accordions, and they must be accessible to all users.
+    </div>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
